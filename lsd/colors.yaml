@@ -1,0 +1,41 @@
+# 256-colour codes nearest the Sorbet Day palette on milk (lsd 1.0.0 does not accept
+# #hex here): 23 mint, 95 rose, 94 peach, 238 lime, 58 lemon,
+# 60 lavender, 246 smoke, 241 ash.
+user: 58
+group: 246
+permission:
+  read: 246
+  write: 58
+  exec: 23
+  exec-sticky: 23
+  no-access: 241
+  octal: 60
+  acl: 60
+  context: 60
+date:
+  hour-old: 58
+  day-old: 238
+  older: 241
+size:
+  none: 241
+  small: 238
+  medium: 58
+  large: 95
+inode:
+  valid: 238
+  invalid: 95
+links:
+  valid: 60
+  invalid: 95
+tree-edge: 241
+git-status:
+  default: 241
+  unmodified: 241
+  ignored: 241
+  new-in-index: 238
+  new-in-workdir: 238
+  typechange: 58
+  deleted: 95
+  renamed: 60
+  modified: 94
+  conflicted: 95
