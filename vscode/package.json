@@ -1,0 +1,39 @@
+{
+  "name": "cosmic-sorbetday-theme",
+  "displayName": "Cosmic Sorbet Day",
+  "description": "Dark colour theme from the COSMIC Sorbet Day rice, syntax as in its Neovim scheme.",
+  "version": "1.0.0",
+  "publisher": "atraxsrc",
+  "license": "MIT",
+  "icon": "icon.png",
+  "galleryBanner": {
+    "color": "#E9E2E9",
+    "theme": "dark"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/atraxsrc/cosmic-sorbetday-theme"
+  },
+  "engines": {
+    "vscode": "^1.70.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "keywords": [
+    "theme",
+    "dark",
+    "cosmic",
+    "sorbetday",
+    "cursor"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Cosmic Sorbet Day",
+        "uiTheme": "vs",
+        "path": "./themes/cosmic-sorbetday-color-theme.json"
+      }
+    ]
+  }
+}
