@@ -6,7 +6,8 @@
 
 Pop!_OS 24.04 on COSMIC in milk, liquorice and mint: desktop, terminal,
 shell, Firefox, Brave, cursor, wallpapers. Sorbet tones on milk;
-rose is kept for what is wrong.
+rose is kept for what is wrong. The light half of a pair;
+the dark half is [cosmic-sorbet-theme](https://github.com/atraxsrc/cosmic-sorbet-theme).
 
 ![Pop!_OS](https://img.shields.io/badge/Pop!_OS-24.04_LTS-1c685c?style=for-the-badge&logo=popos&logoColor=white)
 ![COSMIC](https://img.shields.io/badge/COSMIC-1.0.0-2e6b29?style=for-the-badge)
@@ -40,6 +41,14 @@ is at least 4.5:1 on the window background.
 | Muted | ![#635f63](https://placehold.co/12x12/635f63/635f63.png) Secondary text | ![#635F63](https://placehold.co/12x12/635f63/635f63.png) `#635F63` |
 | Dim | ![#959295](https://placehold.co/12x12/959295/959295.png) Comments | ![#959295](https://placehold.co/12x12/959295/959295.png) `#959295` |
 | Lines | ![#b0a5b0](https://placehold.co/12x12/b0a5b0/b0a5b0.png) Box lines, inactive | ![#B0A5B0](https://placehold.co/12x12/b0a5b0/b0a5b0.png) `#B0A5B0` |
+
+| Role | Sorbet Day | Sorbet |
+|------|---|---|
+| Background | ![#E9E2E9](https://placehold.co/12x12/e9e2e9/e9e2e9.png) `#E9E2E9` | ![#05080A](https://placehold.co/12x12/05080a/05080a.png) `#05080A` |
+| Text | ![#1B1A1B](https://placehold.co/12x12/1b1a1b/1b1a1b.png) `#1B1A1B` | ![#FFF6FF](https://placehold.co/12x12/fff6ff/fff6ff.png) `#FFF6FF` |
+| Accent | ![#1C685C](https://placehold.co/12x12/1c685c/1c685c.png) `#1C685C` | ![#B2FFF3](https://placehold.co/12x12/b2fff3/b2fff3.png) `#B2FFF3` |
+| Success | ![#2E6B29](https://placehold.co/12x12/2e6b29/2e6b29.png) `#2E6B29` | ![#BAF7B5](https://placehold.co/12x12/baf7b5/baf7b5.png) `#BAF7B5` |
+| Error | ![#963653](https://placehold.co/12x12/963653/963653.png) `#963653` | ![#FF9FBC](https://placehold.co/12x12/ff9fbc/ff9fbc.png) `#FF9FBC` |
 
 The accent is mint, 5.2:1 on the background and 5.8:1 on a container,
 so it stays the same colour wherever it is text; buttons and selections carry
@@ -96,7 +105,7 @@ it with milk text on top.
 │   ├── cosmic-sorbetday.tdesktop-theme # built theme, open this in Telegram
 │   └── build.sh                 # rebuilds it, optionally with a wallpaper
 ├── vscode
-│   ├── themes/                  # Cursor / VS Code colour theme, Cosmic Sorbet Day
+│   ├── themes/                  # Cursor / VS Code colour themes, Sorbet (dark) + Sorbet Day (light)
 │   ├── package.json             # extension manifest
 │   ├── install.sh               # packs a .vsix, installs it with cursor --install-extension
 │   └── README.md
@@ -136,6 +145,11 @@ applets and system UI (maximized apps stay solid), and corners are squared
 Appearance → Style → Frosted glass after import; those sliders survive a theme switch.
 
 Export from Appearance if you tweak backgrounds / tints so you do not lose them.
+
+Pairing tip: import `Sorbet.ron` from
+[cosmic-sorbet-theme](https://github.com/atraxsrc/cosmic-sorbet-theme) into the
+Dark slot and COSMIC's Dark / Light toggle flips between the two. Wallpaper,
+Firefox and the shell layer do not follow the toggle; those are per-rice files.
 
 ### Baseline settings
 
@@ -228,9 +242,10 @@ packing a `.crx`: [`brave/README.md`](brave/README.md).
 ## Claude Desktop
 
 For the unofficial [claude-desktop-extra](https://github.com/patrickjaja/claude-desktop-extra)
-Linux build. `claude-desktop/cosmic-sorbet.jsonc` carries the Sorbet Day palette in
-both of the file's blocks, so Claude's own Settings → Appearance toggle makes
-no difference. Colours come from `cosmic/SorbetDay.ron`, contrast-checked (text and
+Linux build. `claude-desktop/cosmic-sorbet.jsonc` is one theme with both halves:
+Sorbet in dark mode and Sorbet Day in light mode, so Claude's own
+Settings → Appearance toggle switches between the two rices.
+Colours come from `cosmic/*.ron`, contrast-checked (text and
 button text 4.5:1, accents 3:1).
 
 ```bash
@@ -240,13 +255,18 @@ button text 4.5:1, accents 3:1).
 It copies the file into `~/.config/Claude/themes.d/`. Then press
 <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>T</kbd> in Claude Desktop and pick **cosmic-sorbet**.
 
+The same file ships in [`cosmic-sorbet-theme`](https://github.com/atraxsrc/cosmic-sorbet-theme),
+so installing from either repo gives the same theme.
+
 ---
 
 ## Cursor editor
 
-`vscode/` is a colour theme extension for [Cursor](https://cursor.com):
-**Cosmic Sorbet Day**. It is a plain VS Code theme extension, so VS Code and VSCodium
-take it too. Code is coloured the way Neovim is in the rice; the workbench is
+`vscode/` is a colour theme extension for [Cursor](https://cursor.com) with
+both halves of the pair: **Cosmic Sorbet** and **Cosmic Sorbet Day**. It is a
+plain VS Code theme extension, so VS Code and VSCodium take it too, and the
+same extension ships in cosmic-sorbet-theme. Code is coloured the way Neovim is
+in the rice; the workbench is
 milk with cream menus, hovers and inputs, mint on the active tab, buttons
 and menu highlight, and the integrated terminal uses the COSMIC Terminal
 scheme. Cursor builds its Agent and chat panels from the same theme colours,
@@ -259,8 +279,9 @@ so they follow along.
 It packs `vscode/` into a `.vsix` and installs it with
 `cursor --install-extension`; run it again after editing the theme. Then press
 <kbd>Ctrl</kbd>+<kbd>K</kbd> <kbd>Ctrl</kbd>+<kbd>T</kbd> in Cursor and pick
-**Cosmic Sorbet Day**. The colours and the contrast notes are in
-[`vscode/README.md`](vscode/README.md).
+**Cosmic Sorbet Day**. Three lines in Cursor's `settings.json` make it follow
+COSMIC's Dark / Light toggle between Sorbet and Sorbet Day; they, the colours and
+the contrast notes are in [`vscode/README.md`](vscode/README.md).
 
 ---
 
@@ -288,6 +309,9 @@ background is plain milk; to put a wallpaper behind the chat instead
 
 Built against Telegram Desktop 7.3.1. Calls, group calls, statistics charts and
 premium badges keep Telegram's own colours.
+
+Telegram has no dark / light pairing, so Sorbet, the dark half, ships its
+own theme.
 
 ---
 
@@ -527,11 +551,16 @@ The GUI steps it cannot do are printed at the end:
 2. COSMIC Terminal → View → Color schemes → Light tab → Import `cosmic-term/SorbetDay-term.ron`
 3. Firefox: disable the old rice's add-on, enable this one, restart Firefox
 4. Settings → Wallpaper → a file from `backgrounds/`
-5. Claude Desktop: Ctrl+Shift+T → `cosmic-sorbet`
+5. Claude Desktop: Ctrl+Shift+T → `cosmic-sorbet`, Appearance → Light
 6. `exec zsh`, restart Neovim (`:Lazy clean` drops plugins only the old specs used)
 
 Skip 1 and 2 when that slot already holds Sorbet Day. The first time on this rice,
 run [Setup](#setup) once for the fonts, icons and cursor.
+
+**Within the pair** (Sorbet Day ↔ [Sorbet](https://github.com/atraxsrc/cosmic-sorbet-theme)): the two halves
+sit side by side in COSMIC's Dark and Light slots and share one Claude Desktop
+theme, so after the first time only the Firefox add-on and the wallpaper are
+left by hand. Add `--keep-icons` to keep one icon colour across the pair.
 
 Leaving Sorbet Day is the next rice's `./scripts/switch.sh`. `./cursors/uninstall.sh`
 puts the Pop cursor back.

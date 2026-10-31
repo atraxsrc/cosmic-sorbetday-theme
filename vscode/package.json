@@ -1,18 +1,18 @@
 {
-  "name": "cosmic-sorbetday-theme",
-  "displayName": "Cosmic Sorbet Day",
-  "description": "Dark colour theme from the COSMIC Sorbet Day rice, syntax as in its Neovim scheme.",
+  "name": "cosmic-sorbet-theme",
+  "displayName": "Cosmic Sorbet / Cosmic Sorbet Day",
+  "description": "Cosmic Sorbet (dark) and Cosmic Sorbet Day (light), the COSMIC rice pair, for Cursor and VS Code",
   "version": "1.0.0",
   "publisher": "atraxsrc",
   "license": "MIT",
   "icon": "icon.png",
   "galleryBanner": {
-    "color": "#E9E2E9",
+    "color": "#05080A",
     "theme": "dark"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/atraxsrc/cosmic-sorbetday-theme"
+    "url": "https://github.com/atraxsrc/cosmic-sorbet-theme"
   },
   "engines": {
     "vscode": "^1.70.0"
@@ -23,12 +23,19 @@
   "keywords": [
     "theme",
     "dark",
+    "light",
     "cosmic",
+    "sorbet",
     "sorbetday",
     "cursor"
   ],
   "contributes": {
     "themes": [
+      {
+        "label": "Cosmic Sorbet",
+        "uiTheme": "vs-dark",
+        "path": "./themes/cosmic-sorbet-color-theme.json"
+      },
       {
         "label": "Cosmic Sorbet Day",
         "uiTheme": "vs",
