@@ -1,0 +1,50 @@
+{
+  "manifest_version": 2,
+  "name": "Cosmic Sorbet Day",
+  "version": "1.0",
+  "description": "Milk theme from the COSMIC Sorbet Day rice: lime icons, one mint accent.",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "{d48f9bcb-1711-592d-9e94-3e0e7d826e4e}"
+    }
+  },
+  "icons": {
+    "32": "icons/icon-32.png",
+    "48": "icons/icon-48.png",
+    "64": "icons/icon-64.png",
+    "96": "icons/icon-96.png",
+    "128": "icons/icon-128.png"
+  },
+  "theme": {
+    "colors": {
+      "toolbar": "#F4EEF4",
+      "toolbar_text": "#1b1a1b",
+      "frame": "#E9E2E9",
+      "tab_background_text": "#2e6b29",
+      "tab_text": "#1c685c",
+      "toolbar_field": "#d4cad4",
+      "toolbar_field_text": "#1b1a1b",
+      "toolbar_field_border_focus": "#1C685C",
+      "toolbar_field_highlight": "#1C685C",
+      "toolbar_field_highlight_text": "#E9E2E9",
+      "tab_line": "#1C685C",
+      "popup": "#F4EEF4",
+      "popup_text": "#1b1a1b",
+      "button_background_active": "#1C685C",
+      "button_background_hover": "#d4cad4",
+      "frame_inactive": "#E9E2E9",
+      "icons_attention": "#1C685C",
+      "icons": "#2e6b29",
+      "ntp_background": "#E9E2E9",
+      "ntp_text": "#1b1a1b",
+      "popup_border": "#684488",
+      "popup_highlight_text": "#E9E2E9",
+      "popup_highlight": "#1C685C",
+      "sidebar_border": "#d4cad4",
+      "sidebar_highlight_text": "#E9E2E9",
+      "sidebar_highlight": "#1C685C",
+      "sidebar_text": "#1b1a1b",
+      "tab_loading": "#1C685C"
+    }
+  }
+}

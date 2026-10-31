@@ -1,0 +1,36 @@
+{
+  "manifest_version": 3,
+  "name": "Cosmic Sorbet Day",
+  "version": "1.0",
+  "description": "Milk theme from the COSMIC Sorbet Day rice: lime icons, one mint accent.",
+  "icons": {
+    "32": "icons/icon-32.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  },
+  "theme": {
+    "colors": {
+      "frame": [233, 226, 233],
+      "frame_inactive": [233, 226, 233],
+      "frame_incognito": [233, 226, 233],
+      "frame_incognito_inactive": [233, 226, 233],
+      "background_tab": [233, 226, 233],
+      "background_tab_inactive": [233, 226, 233],
+      "background_tab_incognito": [233, 226, 233],
+      "background_tab_incognito_inactive": [233, 226, 233],
+      "toolbar": [244, 238, 244],
+      "tab_text": [28, 104, 92],
+      "tab_background_text": [46, 107, 41],
+      "tab_background_text_inactive": [46, 107, 41],
+      "tab_background_text_incognito": [46, 107, 41],
+      "tab_background_text_incognito_inactive": [46, 107, 41],
+      "bookmark_text": [27, 26, 27],
+      "toolbar_button_icon": [46, 107, 41],
+      "omnibox_background": [212, 202, 212],
+      "omnibox_text": [27, 26, 27],
+      "ntp_background": [233, 226, 233],
+      "ntp_text": [27, 26, 27],
+      "ntp_link": [28, 104, 92]
+    }
+  }
+}
