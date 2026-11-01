@@ -1,0 +1,37 @@
+# SorbetDay for lazygit, part of cosmic-sorbetday-theme (MIT). Only the colours: your
+# own ~/.config/lazygit/config.yml keeps the rest.
+#
+# Install: ./lazygit/install.sh puts this in ~/.config/lazygit/sorbetday.yml and
+# zsh/sorbetday.zsh sets LG_CONFIG_FILE to "config.yml,sorbetday.yml" so lazygit
+# reads both (the later file wins). Without the zsh layer:
+#   export LG_CONFIG_FILE="$HOME/.config/lazygit/config.yml,$HOME/.config/lazygit/sorbetday.yml"
+gui:
+  theme:
+    activeBorderColor:
+      - "#1C685C"
+      - bold
+    inactiveBorderColor:
+      - "#D4CAD4"
+    searchingActiveBorderColor:
+      - "#895125"
+      - bold
+    optionsTextColor:
+      - "#684488"
+    selectedLineBgColor:
+      - "#E0D6E0"
+    inactiveViewSelectedLineBgColor:
+      - "#F4EEF4"
+    cherryPickedCommitFgColor:
+      - "#E9E2E9"
+    cherryPickedCommitBgColor:
+      - "#68602C"
+    markedBaseCommitFgColor:
+      - "#E9E2E9"
+    markedBaseCommitBgColor:
+      - "#2E6B29"
+    unstagedChangesColor:
+      - "#963653"
+    defaultFgColor:
+      - "#1B1A1B"
+  authorColors:
+    "*": "#68602C"

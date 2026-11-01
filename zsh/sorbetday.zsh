@@ -66,6 +66,17 @@ fi
 
 (( $+commands[cosmic-edit] )) && alias edit='cosmic-edit'
 
+# lazygit reads one config file; stack the rice colours (lazygit/sorbetday.yml,
+# installed by ./lazygit/install.sh) on top of your own config.yml
+if (( $+commands[lazygit] )); then
+    _sorbetday_lg="${XDG_CONFIG_HOME:-$HOME/.config}/lazygit"
+    if [[ -f $_sorbetday_lg/sorbetday.yml ]]; then
+        export LG_CONFIG_FILE="$_sorbetday_lg/sorbetday.yml"
+        [[ -f $_sorbetday_lg/config.yml ]] && LG_CONFIG_FILE="$_sorbetday_lg/config.yml,$LG_CONFIG_FILE"
+    fi
+    unset _sorbetday_lg
+fi
+
 if (( $+commands[nvim] )); then
     alias vi='nvim'
     alias vim='nvim'

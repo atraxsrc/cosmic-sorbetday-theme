@@ -1,0 +1,45 @@
+# SorbetDay for Ghostty, part of cosmic-sorbetday-theme (MIT).
+# Colours follow the COSMIC Terminal scheme (cosmic-term/).
+#
+# Install: ./ghostty/install.sh puts this in ~/.config/ghostty/themes/, then in
+# ~/.config/ghostty/config:
+#   theme = SorbetDay
+# or, with the Sorbet half installed too, following COSMIC's Dark / Light toggle:
+#   theme = dark:Sorbet,light:SorbetDay
+
+background = #E9E2E9
+foreground = #1B1A1B
+
+cursor-color = #1C685C
+cursor-text = #E9E2E9
+
+selection-background = #D4CAD4
+selection-foreground = #1B1A1B
+
+split-divider-color = #D4CAD4
+unfocused-split-fill = #E9E2E9
+
+# black
+palette = 0=#EDE7ED
+palette = 8=#959295
+# red
+palette = 1=#963653
+palette = 9=#713A4A
+# green
+palette = 2=#2E6B29
+palette = 10=#446742
+# yellow
+palette = 3=#68602C
+palette = 11=#4C482F
+# blue
+palette = 4=#1C685C
+palette = 12=#1F4D46
+# magenta
+palette = 5=#895125
+palette = 13=#644329
+# cyan
+palette = 6=#3A857B
+palette = 14=#684488
+# white
+palette = 7=#342D34
+palette = 15=#131113
