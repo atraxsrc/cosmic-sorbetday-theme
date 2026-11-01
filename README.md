@@ -453,7 +453,7 @@ Restart open apps afterwards (Files caches icons per window).
 Add `--system` to install to `/usr/share/icons` instead, for every user and the
 login screen (asks for sudo); `--user` is the default.
 
-Wallpapers ship in [`backgrounds/`](backgrounds/), named `sorbetday-<subject>`, the same pictures as Sorbet, lifted into Sorbet Day's light key:
+Wallpapers ship in [`backgrounds/`](backgrounds/), named `sorbetday-<subject>`, the same pictures as Sorbet, their pastels pinned to Sorbet Day's window colour:
 five pastel photographs: a black-sand shore, a pink pyramid in a lilac
 desert, mint headphones, a pastel city block under a sliver of moon and a
 tower against a pink-to-cyan sky, plus the anime portrait from the
