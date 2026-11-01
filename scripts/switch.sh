@@ -10,7 +10,7 @@ SLUG="sorbetday"                         # zsh/<slug>.zsh, nvim/lua/plugins/<slu
 MODE="light"                        # the COSMIC half this rice fills: dark or light
 RON="SorbetDay.ron"                      # desktop theme in cosmic/
 TERM_RON="SorbetDay-term.ron"            # terminal scheme in cosmic-term/
-BTOP="Sorbet Day"                         # btop/<name>.theme
+BTOP="SorbetDay"                         # btop/<name>.theme
 
 usage() {
     cat <<EOF
