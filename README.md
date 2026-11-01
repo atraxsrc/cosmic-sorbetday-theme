@@ -13,6 +13,7 @@ the dark half is [cosmic-sorbet-theme](https://github.com/atraxsrc/cosmic-sorbet
 ![COSMIC](https://img.shields.io/badge/COSMIC-1.0.0-2e6b29?style=for-the-badge)
 ![Sorbet Day](https://img.shields.io/badge/Theme-SorbetDay-e9e2e9?style=for-the-badge&labelColor=1c685c)
 ![Firefox](https://img.shields.io/badge/Firefox-SorbetDay-1c685c?style=for-the-badge&logo=firefox-browser&logoColor=white)
+[![Gallery](https://img.shields.io/badge/Gallery-All_rices-1c685c?style=for-the-badge)](https://atraxsrc.github.io/cosmic-rices/)
 ![License](https://img.shields.io/badge/License-MIT-635f63?style=for-the-badge)
 
 </div>
