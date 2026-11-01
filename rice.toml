@@ -1,0 +1,6 @@
+name = "Sorbet Day"
+mode = "light"
+theme = "SorbetDay.ron"
+pair = "sorbet"
+terminal = "SorbetDay-term.ron"
+btop = "SorbetDay"
