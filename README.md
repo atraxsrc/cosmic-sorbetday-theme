@@ -128,6 +128,8 @@ it with milk text on top.
 │   ├── config.yaml              # theme: custom
 │   ├── colors.yaml              # permission / size / date / git columns
 │   └── install.sh
+├── notesnook
+│   └── cosmic-sorbetday.json    # Notesnook theme, Sorbet Day (light)
 ├── nvim                         # Neovim colorscheme, LazyVim spec, RON syntax, install.sh
 ├── obsidian
 │   ├── cosmic-sorbet.css        # CSS snippet, Sorbet (dark) + Sorbet Day (light)
@@ -413,6 +415,22 @@ in ![#68602C](https://placehold.co/12x12/68602c/68602c.png) `#68602C`. The same 
 
 It copies the file into the vault's `.obsidian/snippets/`. Snippets are per
 vault, so run it once per vault.
+
+---
+
+## Notesnook
+
+`notesnook/cosmic-sorbetday.json` is a [Notesnook](https://notesnook.com/) theme for Sorbet Day,
+built from the same palette as the Obsidian snippet: window, list and sidebar
+backgrounds, text, accent, selection and the error / success colours. A
+Notesnook theme holds one colour scheme, so the Sorbet half ships as
+`notesnook/cosmic-sorbet.json` in cosmic-sorbet-theme; load both if you switch between
+dark and light.
+
+```text
+Notesnook → Settings → Appearance → Themes → Load from file
+→ pick notesnook/cosmic-sorbetday.json → Set as default
+```
 
 ---
 
