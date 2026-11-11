@@ -72,7 +72,7 @@
     frosted_panel: true,
     frosted_applets: true,
     frosted_maximized_apps: false,
-    icon_theme: "Cosmic-SorbetDay-Mint",
+    icon_theme: "Cosmic-SorbetDay-Dark",
     font: (
         family: "Maple Mono Normal",
         weight: Light,

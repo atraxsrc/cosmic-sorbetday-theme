@@ -213,7 +213,7 @@ Firefox and the shell layer do not follow the toggle; those are per-rice files.
 | Where | Setting |
 |-------|---------|
 | Fonts | Interface `Maple Mono Normal` Light, monospace `Maple Mono Normal NFM` |
-| Icons | Cosmic-SorbetDay-Mint |
+| Icons | Cosmic-SorbetDay-Dark |
 | Windows | Minimize / maximize buttons hidden, theme applied to GNOME apps |
 | Terminal | Maple Mono 15 (weights 500 / bold 800 / dim 300), 77% opacity, no header bar, Sorbet Day |
 
@@ -706,13 +706,13 @@ cp btop/SorbetDay.theme ~/.config/btop/themes/
 Icons: **Cosmic-SorbetDay**, the [Kanagawa icons](https://github.com/Fausto-Korpsvart/Kanagawa-GKT-Theme/tree/main/icons/Kanagawa)
 by Fausto Korpsvart recolored to this palette in
 [cosmic-icon-themes](https://github.com/atraxsrc/cosmic-icon-themes). Folders come in
-three colors: **Mint** ![#1C685C](https://placehold.co/12x12/1c685c/1c685c.png) `#1C685C` (default), **Rose** ![#963653](https://placehold.co/12x12/963653/963653.png) `#963653` and **Dark** ![#1B1A1B](https://placehold.co/12x12/1b1a1b/1b1a1b.png) `#1B1A1B` with mint symbols.
+three colors: **Mint** ![#1C685C](https://placehold.co/12x12/1c685c/1c685c.png) `#1C685C`, **Rose** ![#963653](https://placehold.co/12x12/963653/963653.png) `#963653` and **Dark** ![#1B1A1B](https://placehold.co/12x12/1b1a1b/1b1a1b.png) `#1B1A1B` (default) with mint symbols.
 
 ![Cosmic-SorbetDay folder colors](https://raw.githubusercontent.com/atraxsrc/cosmic-icon-themes/main/previews/Cosmic-SorbetDay.png)
 
 ```bash
-./icons/install.sh                       # Mint folders
-./icons/install.sh --variant Rose  # or Dark
+./icons/install.sh                 # Dark folders
+./icons/install.sh --variant Mint  # or Rose
 ```
 
 It downloads the pack from the latest cosmic-icon-themes release, checks its SHA256,
